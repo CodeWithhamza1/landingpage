@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none
+}
+body{
+    background-image:linear-gradient(to bottom, rgba(0,0,0,.400), rgba(0,0,0,.600)), url('bg.jpg');
+    /* background-position: center; */
+    /* background: #000; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    color: white;
+    /* background-color:  rgb(55, 11, 211); */
+    border-bottom: 1px solid  gray;
+}
+ul{
+    display: flex;
+}
+li{
+    margin: 0 15px;
+    cursor: pointer;
+    transition: color .3s ease;
+    font-weight: 500;
+}
+li:hover{
+    color: rgb(206, 132, 48);
+}
+.logo{
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+span{
+    color:  rgb(206, 132, 48);
+}
+
+/* 
+-------------------
+Main Section Styling
+-------------------
+*/
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background:  rgb(55, 11, 211); */
+}
+form{
+    /* background-color:  rgb(55, 11, 211); */
+    margin-top: 3%;
+    background: transparent;
+    border: 1px solid  rgb(206, 132, 48);
+    backdrop-filter: blur(5px);
+    padding: 3%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(164, 165, 165), -5px -5px 10px rgb(164, 167, 167);
+}
+input{
+    display: block;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 8px;
+    outline: 0;
+    border: 1px solid  white;
+    background: transparent;
+    color: white;
+}
+input::placeholder{
+    color: white;
+}
+
+input[type=submit]{
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+label{
+    color: white;
+}
+footer p{
+    padding-top: 10px;
+    border-top: 1px solid  gray;
+    text-align: center;
+    color: white;
+    margin: 40px auto 5px auto;
+}
